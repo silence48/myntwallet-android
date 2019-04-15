@@ -60,25 +60,14 @@ static const char *BRTestNetDNSSeeds[] = {
 // blockchain checkpoints - these are also used as starting points for partial chain downloads, so they must be at
 // difficulty transition boundaries in order to verify the block difficulty at the immediately following transition
 static const BRCheckPoint BRMainNetCheckpoints[] = {
-    {       0, "0x000000dc77d1de7f68d5fa1d07a0d0599a617ff31f15a8548e3e17764c2f5082", 1550250434, 0x1e00ffff }//,  //Ravenized
-    //{       29008, "0000000006dc945e3749f295bdf9adf912e4017c32b3efb8e201e5c2dadfd4e5", 1551114406, 0x1c09d959  },
-    //{       167868, "0000000004786fd039b75c53fa18cc9805a45129c2c95f0b0cc44ead37d2a8ca", 1555318313, 0x1c0f044f  }
+       {      0, u256_hex_decode("000000dc77d1de7f68d5fa1d07a0d0599a617ff31f15a8548e3e17764c2f5082"), 1550250434, 0x1e00ffff }  //Myntized	    {       0, "0x000000dc77d1de7f68d5fa1d07a0d0599a617ff31f15a8548e3e17764c2f5082", 1550250434, 0x1e00ffff }//,  //Ravenized
+  
     
 };
 
 static const BRCheckPoint BRTestNetCheckpoints[] = {
     {       0, u256_hex_decode("000000000933ea01ad0ee984209779baaec3ced90fa3f408719526f8d77f4943"), 1296688602, 0x1d00ffff },
-    {  100800, u256_hex_decode("0000000000a33112f86f3f7b0aa590cb4949b84c2d9c673e9e303257b3be9000"), 1376543922, 0x1c00d907 },
-    {  201600, u256_hex_decode("0000000000376bb71314321c45de3015fe958543afcbada242a3b1b072498e38"), 1393813869, 0x1b602ac0 },
-    {  302400, u256_hex_decode("0000000000001c93ebe0a7c33426e8edb9755505537ef9303a023f80be29d32d"), 1413766239, 0x1a33605e },
-    {  403200, u256_hex_decode("0000000000ef8b05da54711e2106907737741ac0278d59f358303c71d500f3c4"), 1431821666, 0x1c02346c },
-    {  504000, u256_hex_decode("0000000000005d105473c916cd9d16334f017368afea6bcee71629e0fcf2f4f5"), 1436951946, 0x1b00ab86 },
-    {  604800, u256_hex_decode("00000000000008653c7e5c00c703c5a9d53b318837bb1b3586a3d060ce6fff2e"), 1447484641, 0x1a092a20 },
-    {  705600, u256_hex_decode("00000000004ee3bc2e2dd06c31f2d7a9c3e471ec0251924f59f222e5e9c37e12"), 1455728685, 0x1c0ffff0 },
-    {  806400, u256_hex_decode("0000000000000faf114ff29df6dbac969c6b4a3b407cd790d3a12742b50c2398"), 1462006183, 0x1a34e280 },
-    {  907200, u256_hex_decode("0000000000166938e6f172a21fe69fe335e33565539e74bf74eeb00d2022c226"), 1469705562, 0x1c00ffff },
-    { 1008000, u256_hex_decode("000000000000390aca616746a9456a0d64c1bd73661fd60a51b5bf1c92bae5a0"), 1476926743, 0x1a52ccc0 },
-    { 1108800, u256_hex_decode("00000000000288d9a219419d0607fb67cc324d4b6d2945ca81eaa5e739fab81e"), 1490751239, 0x1b09ecf0 }
+//still need to add these
 };
 
 static int BRMainNetVerifyDifficulty(const BRMerkleBlock *block, const BRSet *blockSet)
