@@ -70,7 +70,7 @@ static const struct {
     uint32_t timestamp;
     uint32_t target;
 } checkpoint_array[] = {
-    {       0, "0x000000dc77d1de7f68d5fa1d07a0d0599a617ff31f15a8548e3e17764c2f5082", 1550250434, 0x1e00ffff }//,  //Ravenized
+    {       0, "000000dc77d1de7f68d5fa1d07a0d0599a617ff31f15a8548e3e17764c2f5082", 1550250434, 0x1e00ffff }//,  //Ravenized
     //{       29008, "0000000006dc945e3749f295bdf9adf912e4017c32b3efb8e201e5c2dadfd4e5", 1551114406, 0x1c09d959  },
     //{       167868, "0000000004786fd039b75c53fa18cc9805a45129c2c95f0b0cc44ead37d2a8ca", 1555318313, 0x1c0f044f  }
 };
