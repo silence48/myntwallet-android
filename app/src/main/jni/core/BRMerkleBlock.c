@@ -40,7 +40,7 @@
 #endif
 
 #define TARGET_TIMESPAN   ((14*24*6) * 60) // the targeted timespan between difficulty target adjustments   // 2016 ravencoin blocks
-#define DGW_TARGET_TIMESPAN   (1 * 60) // the targeted timespan between difficulty target adjustments       // 1 ravencoin block
+#define DGW_TARGET_TIMESPAN   (1 * 30) // the targeted timespan between difficulty target adjustments       // 1 ravencoin block
 
 inline static int _ceil_log2(int x)
 {

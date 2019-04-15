@@ -46,13 +46,13 @@
 #if BITCOIN_TESTNET
 #define MAGIC_NUMBER 0x544e5652  //RVNT - Reverse from chainparams.cpp
 #else
-#define MAGIC_NUMBER 0x4e564152  //RAVN - Reverse from chainparams.cpp
+#define MAGIC_NUMBER 0x8e3c9224  //RAVN - Reverse from chainparams.cpp
 #endif
 #define HEADER_LENGTH      24
 #define MAX_MSG_LENGTH     0x02000000
 #define MAX_GETDATA_HASHES 50000
 #define ENABLED_SERVICES   0ULL  // we don't provide full blocks to remote nodes
-#define PROTOCOL_VERSION   70013
+#define PROTOCOL_VERSION   70020
 #define MIN_PROTO_VERSION  70002 // peers earlier than this protocol version not supported (need v0.9 txFee relay rules)
 #define LOCAL_HOST         ((UInt128) { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xff, 0xff, 0x7f, 0x00, 0x00, 0x01 })
 #define CONNECT_TIMEOUT    3.0

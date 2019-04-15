@@ -48,9 +48,7 @@ typedef struct {
 
 
 static const char *BRMainNetDNSSeeds[] = {
-    "seed-raven.ravencoin.org.", "seed-raven.bitactivate.com.",
-    /*"seed.breadwallet.com.", "seed.bitcoin.sipa.be.", "dnsseed.bluematt.me.", "dnsseed.bitcoin.dashjr.org.",
-    "seed.bitcoinstats.com.", "bitseed.xf2.org.", "seed.bitcoin.jonasschnelli.ch.",*/ NULL
+        "45.76.189.142", "66.70.155.47", "213.118.198.247"
 };
 
 static const char *BRTestNetDNSSeeds[] = {
@@ -62,8 +60,10 @@ static const char *BRTestNetDNSSeeds[] = {
 // blockchain checkpoints - these are also used as starting points for partial chain downloads, so they must be at
 // difficulty transition boundaries in order to verify the block difficulty at the immediately following transition
 static const BRCheckPoint BRMainNetCheckpoints[] = {
-    {      0, u256_hex_decode("0000006b444bc2f2ffe627be9d9e7e7a0730000870ef6eb6da46c8eae389df90"), 1514999494, 0x1e00ffff },  //Ravenized
-    { 135072, u256_hex_decode("0000000000011c7885185adde826aef7cffeb806103d561374601936bec7f25b"), 1521769273, 0x1b05643f }
+    {       0, "0x000000dc77d1de7f68d5fa1d07a0d0599a617ff31f15a8548e3e17764c2f5082", 1550250434, 0x1e00ffff }//,  //Ravenized
+    //{       29008, "0000000006dc945e3749f295bdf9adf912e4017c32b3efb8e201e5c2dadfd4e5", 1551114406, 0x1c09d959  },
+    //{       167868, "0000000004786fd039b75c53fa18cc9805a45129c2c95f0b0cc44ead37d2a8ca", 1555318313, 0x1c0f044f  }
+    
 };
 
 static const BRCheckPoint BRTestNetCheckpoints[] = {
@@ -107,8 +107,8 @@ static int BRTestNetVerifyDifficulty(const BRMerkleBlock *block, const BRSet *bl
 
 static const BRChainParams BRMainNetParams = {
     BRMainNetDNSSeeds,
-    8333,       // standardPort
-    0xd9b4bef9, // magicNumber
+    6664,       // standardPort
+    0x8e3c9224, // magicNumber
     0,          // services
     BRMainNetVerifyDifficulty,
     BRMainNetCheckpoints,

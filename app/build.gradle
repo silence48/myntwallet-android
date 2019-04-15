@@ -1,9 +1,9 @@
 apply plugin: 'com.android.application'
-apply plugin: 'io.fabric'
+// apply plugin: 'io.fabric'
 
 android {
     compileSdkVersion = 27
-    buildToolsVersion = '28.0.2'
+    buildToolsVersion = '28.0.3'
 
     defaultConfig {
         testInstrumentationRunner = 'android.support.test.runner.AndroidJUnitRunner'
@@ -185,4 +185,4 @@ dependencies {
 }
 
 
-apply plugin: 'com.google.gms.google-services'
+// apply plugin: 'com.google.gms.google-services'
