@@ -69,7 +69,7 @@
     <color name="currency_header_background">#f29500</color>
     <color name="currency_subheading_color">#F0E5D7</color>
     <color name="currency_subheading_color_trans">#4DF0E5D7</color>
-    <color name="currency_buttons_color">#ffac26</color>
+    <color name="currency_buttons_color">#4D6EF4</color>
 
     //Home screen
     <color name="total_assets_label_color">#788f9e</color>

@@ -199,7 +199,7 @@
   <!-- Jailbreak warning message -->
   <string name="JailbreakWarnings.messageWithBalance">DEVICE SECURITY COMPROMISED\n Any \'jailbreak\' app can access Ravencoin Wallet\'s keychain data and steal your bitcoin! Wipe this wallet immediately and restore on a secure device.</string>
   <!-- Jailbreak warning message -->
-  <string name="JailbreakWarnings.messageWithoutBalance">DEVICE SECURITY COMPROMISED\n Any \'jailbreak\' app can access Ravencoin Wallet\'s keychain data and steal your bitcoin. Please only use Ravencoin Wallet on a non-jailbroken device.</string>
+  <string name="JailbreakWarnings.messageWithoutBalance">DEVICE SECURITY COMPROMISED\n Any \'jailbreak\' app can access Ravencoin Wallet\'s keychain data and steal your bitcoin. Please only use Mynt Wallet on a non-jailbroken device.</string>
   <!-- Jailbreak warning title -->
   <string name="JailbreakWarnings.title">WARNING</string>
   <!-- Location services disabled error -->
@@ -526,7 +526,7 @@
   <!-- Argument is date -->
   <string name="StartPaperPhrase.date">You last wrote down your paper key on %1$s</string>
   <!-- Start view message -->
-  <string name="StartViewController.message">The easy and secure way to use Ravencoin.</string>
+  <string name="StartViewController.message">The easy and secure way to use Mynt.</string>
   <!-- Syncing view connectiong state header text -->
   <string name="SyncingView.connecting">Connecting</string>
   <!-- Syncing view header text -->

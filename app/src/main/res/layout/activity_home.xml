@@ -24,14 +24,14 @@
 
             <ImageView
                 android:id="@+id/image_logo"
-                android:scaleType="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="60dp"
                 android:layout_marginStart="16.0dp"
+                android:layout_marginTop="60dp"
                 android:layout_marginEnd="16.0dp"
-                android:background="@drawable/ic_raven_coin_title" />
+                android:background="@drawable/ic_raven_coin_title"
+                android:scaleType="center" />
 
             <LinearLayout
                 android:layout_below="@+id/image_logo"
@@ -333,11 +333,11 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginLeft="0dp"
-            android:layout_marginRight="0dp"
             android:layout_marginTop="4dp"
+            android:layout_marginRight="0dp"
             android:background="@color/blue"
-            android:contentInsetLeft="0dp"
             android:contentInsetStart="0dp"
+            android:contentInsetLeft="0dp"
             android:visibility="visible"
             app:breadText="No internet connection found.\nCheck your connection and try again."
             app:contentInsetLeft="0dp"

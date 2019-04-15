@@ -248,9 +248,9 @@ void BRX16R(void *md32, const void *data, size_t len)
 {
     assert(md32 != NULL);
     assert(data != NULL || len == 0);
-    
+
     int hashSelection;
-    
+
     sph_blake512_context     ctx_blake;      //0
     sph_bmw512_context       ctx_bmw;        //1
     sph_groestl512_context   ctx_groestl;    //2
@@ -267,11 +267,13 @@ void BRX16R(void *md32, const void *data, size_t len)
     sph_shabal512_context    ctx_shabal;     //D
     sph_whirlpool_context    ctx_whirlpool;  //E
     sph_sha512_context       ctx_sha512;     //F
-        
+
     uint8_t *PrevBlockHash = (uint8_t*) &(data[4]);
-    
+
     uint8_t hash_temp[64];
-    
+
+    //const uint256 scrambleHash = uint256S(hashFront + order); // uint256 with length of hash and shuffled last sixteen
+
     for (int i=0;i<16;i++)
     {
         const void *toHash;
@@ -283,9 +285,9 @@ void BRX16R(void *md32, const void *data, size_t len)
             toHash = hash_temp;
             lenToHash = 64;
         }
-        
+        //hashSelection = GetHashSelection(scrambleHash, i);
         hashSelection = GetHashSelection(PrevBlockHash, i);
-        
+
         switch(hashSelection) {
             case 0:
                 sph_blake512_init(&ctx_blake);
